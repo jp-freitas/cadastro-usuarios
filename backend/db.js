@@ -57,7 +57,7 @@ export const db = await mysql.createPool({
    * - Verificar a conexão que esstá no MySQL Workbench e porta que está nessa
    * conexão.
    */
-  port: ____,
+  port: 3307,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0
