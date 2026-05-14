@@ -18,8 +18,7 @@ export const db = await mysql.createPool({
     - Em ambiente local, geralmente usamos o servidor local da máquina.
     - O valor deve ser uma string.
   */
-  host: "localhost",
-
+  host: "127.0.0.1",
   /*
     LACUNA 2:
     Informe o usuário do MySQL.
