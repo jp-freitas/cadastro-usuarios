@@ -92,7 +92,7 @@ form.addEventListener("submit", async function (event) {
       - O corpo da requisição deve enviar name, email e password
       - Use JSON.stringify()
     */
-    const response = await fetch(http://localhost:3000/users, {
+    const response = await fetch("http://localhost:3000/users", {
       method: POST,
       headers: {
         "Content-Type": "application/json"
