@@ -145,7 +145,7 @@ app.post("/users", async (req, res) => {
       - Os campos são name, email e password_hash
       - Use parâmetros para evitar concatenar valores diretamente no SQL
     */
-    await db.prepare("INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?).run(name, email, passwordHash));
+    await db.prepare("INSERT INTO users (name, email, password_hash) VALUES (?, ?, ?)").run(name, email, passwordHash);
       
 
     return res.status(201).json({
