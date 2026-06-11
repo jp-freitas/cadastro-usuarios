@@ -115,7 +115,7 @@ app.post("/users", async (req, res) => {
       LACUNA 8:
       Defina a quantidade de rounds do bcrypt.
     */
-    const saltRounds = 12+;
+    const saltRounds = 12;
 
     /*
       LACUNA 9:
