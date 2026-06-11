@@ -21,7 +21,7 @@ import { db } from "./db.js";
   - Use a função express()
   - Armazene o resultado em uma constante chamada app
 */
-const app = exress();
+const app = express();
 
 /*
   Os middlewares abaixo permitem:
