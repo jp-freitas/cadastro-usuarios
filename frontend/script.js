@@ -94,7 +94,7 @@ form.addEventListener("submit", async function (event) {
       - Use JSON.stringify()
     */
     const response = await fetch("http://localhost:3000/users", {
-      method: POST,
+      method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
