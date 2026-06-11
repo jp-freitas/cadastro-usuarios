@@ -1,6 +1,6 @@
 import Database from "better-sqlite3";
 
-export const db = new Databese("banco.db")
+export const db = new Database("banco.db")
 
 db.exc(`
   CREATE TABLE IF NOT EXISTS users (

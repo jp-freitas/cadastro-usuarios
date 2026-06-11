@@ -96,8 +96,6 @@ app.post("/users", async (req, res) => {
     const [existingUser] = db.prepare(
       "SELECT id FROM users WHERE email = ?"
     ).get(email);
-      
-    );
 
     /*
       LACUNA 7:
@@ -174,8 +172,6 @@ app.post("/users", async (req, res) => {
 */
 app.listen(
   3000,
-  ()
-=> {
+  (() => {
   console.log("Servidor está rodando em http://localhost:3000");
-}
-);
+}));
