@@ -41,7 +41,6 @@ form.addEventListener("submit", async function (event) {
     - Nesse caso, não é obrigatório usar .trim()
   */
   const password = document.getElementById("password").value;
-  console.log(password.length < 8); //12345678910
 
   message.textContent = "";
   message.className = "message";
@@ -93,7 +92,7 @@ form.addEventListener("submit", async function (event) {
       - Use JSON.stringify()
     */
     const response = await fetch("http://localhost:3000/users", {
-      method: POST,
+      method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
